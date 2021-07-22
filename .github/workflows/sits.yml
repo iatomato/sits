@@ -14,13 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: unit test
-      run: cat <<EOF > /tmp/sits.c
-      #include "sits.h"
-      int main()
-      {
-      return 0;
-      }
-      EOF
+      run: gcc --version
 #     - name: make
 #       run: make
 #     - name: make check
