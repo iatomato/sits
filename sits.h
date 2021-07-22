@@ -14,7 +14,7 @@
  */
 
 /* C99 */
-#if defined(__linux__)
+#if defined(__gnu_linux__)
 
 #define OK      2048
 #define _OK     1024
