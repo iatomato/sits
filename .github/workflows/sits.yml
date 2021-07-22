@@ -13,8 +13,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-#     - name: configure
-#       run: ./configure
+    - name: unit test
+      run: cat <<EOF > /tmp/sits.c
+      #include "sits.h"
+      int main()
+      {
+      return 0;
+      }
+      EOF
 #     - name: make
 #       run: make
 #     - name: make check
